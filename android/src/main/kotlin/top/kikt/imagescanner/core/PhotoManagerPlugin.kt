@@ -188,7 +188,6 @@ class PhotoManagerPlugin(
                     if (grantedPermissions.containsAll(
                             arrayListOf(
                                 Manifest.permission.READ_EXTERNAL_STORAGE,
-                                Manifest.permission.WRITE_EXTERNAL_STORAGE
                             )
                         )
                     ) {
@@ -207,8 +206,7 @@ class PhotoManagerPlugin(
         }
 
         val permissions = arrayListOf(
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE
+            Manifest.permission.READ_EXTERNAL_STORAGE
         )
 
         if (needLocationPermissions && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && haveManifestMediaLocation(
